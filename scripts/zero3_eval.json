@@ -1,0 +1,6 @@
+{
+    "kernel_inject": true,
+    "tensor_parallel": {"tp_size": 8},
+    "dtype": "fp16",
+    "enable_cuda_graph": false
+}
