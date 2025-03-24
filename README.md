@@ -6,7 +6,7 @@ Official repository for paper "Scaling Video-Language Models to 10K Frames via H
 ---
 ## :gear: Setup
 ```python
-https://github.com/steven-ccq/ViLAMP.git
+git clone https://github.com/steven-ccq/ViLAMP.git
 cd ViLAMP
 ```
 
