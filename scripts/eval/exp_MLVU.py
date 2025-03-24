@@ -108,7 +108,7 @@ if __name__ == '__main__':
     arg_parser.add_argument('--output_dir', default='dataset/MLVU/output')
     arg_parser.add_argument('--version', default='tmp')
     arg_parser.add_argument('--split', default='1_1')
-    arg_parser.add_argument('--max_frame_num', type=int, default=3600)
+    arg_parser.add_argument('--max_frame_num', type=int, default=600)
 
     args = arg_parser.parse_args()
 

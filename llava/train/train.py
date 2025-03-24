@@ -1223,7 +1223,8 @@ class LazySupervisedDataset(Dataset):
 
                     else:
                         # Please define data processing function before using your own dataset
-                        raise ValueError(f"Undefined Dataset Processing Function: {v}")
+                        # Or you will use default processing function
+                        video += self.access_video_by_sec(v)
 
                 processor = self.data_args.image_processor
                 image = processor.preprocess(video, return_tensors="pt")["pixel_values"]
