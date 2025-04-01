@@ -1224,7 +1224,18 @@ class LazySupervisedDataset(Dataset):
                     else:
                         # Please define data processing function before using your own dataset
                         # Or you will use default processing function
-                        video += self.access_video_by_sec(v)
+                        frame_files = [os.path.join(v, file) for file in os.listdir(v)]
+                        frame_files.sort()
+                        v_frames = []
+                        for file in frame_files:
+                            try:
+                                with Image.open(file) as img:
+                                    frame = img.convert("RGB")
+                                    v_frames.append(frame)
+                            except Exception as e:
+                                print(e)
+                                continue
+                        video += v_frames
 
                 processor = self.data_args.image_processor
                 image = processor.preprocess(video, return_tensors="pt")["pixel_values"]
