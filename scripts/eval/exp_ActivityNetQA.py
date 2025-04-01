@@ -107,7 +107,7 @@ if __name__ == '__main__':
     arg_parser.add_argument('--dataset_path', default='dataset/ActivityNetQA/data/ActivityNetQA_val.json')
     arg_parser.add_argument('--video_dir', default='dataset/ActivityNetQA/all_test')
     arg_parser.add_argument('--output_dir', default='dataset/ActivityNetQA/output')
-    arg_parser.add_argument('--version', default='tmp')
+    arg_parser.add_argument('--version', default='ViLAMP-llava-qwen')
     arg_parser.add_argument('--split', default='1_1')
     arg_parser.add_argument('--max_frame_num', type=int, default=600)
 
