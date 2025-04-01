@@ -112,7 +112,7 @@ if __name__ == '__main__':
     arg_parser.add_argument('--dataset_path', default='dataset/Video-MME/videomme/test-00000-of-00001.parquet')
     arg_parser.add_argument('--video_dir', default='dataset/Video-MME/data')
     arg_parser.add_argument('--output_dir', default='dataset/Video-MME/output')
-    arg_parser.add_argument('--version', default='tmp')
+    arg_parser.add_argument('--version', default='ViLAMP-llava-qwen')
     arg_parser.add_argument('--split', default='1_1')
     arg_parser.add_argument('--max_frame_num', type=int, default=600)
 
