@@ -567,9 +567,11 @@ for idx, row in df.iterrows():
 ## STAR
 ### URL
 Dataset
-https://pan.baidu.com/s/1AjOzqX5WxrZvDr5ZKpVn_w
-Access Code: 6v8u
+
+https://pan.baidu.com/s/1AjOzqX5WxrZvDr5ZKpVn_w Access Code: 6v8u
+
 Video Source
+
 https://prior.allenai.org/projects/charades
 ### Data Scale
 60k Multi-Choice
