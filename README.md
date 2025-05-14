@@ -1,4 +1,11 @@
-# ViLAMP
+# ViLAMP: Scaling Video-Language Models to 10K Frames via Hierarchical Differential Distillation
+
+<div style='display:flex; gap: 0.25rem; '>
+  <a href='https://arxiv.org/abs/2504.02438'><img src='https://img.shields.io/badge/Paper-PDF-red'></a>
+  <a href='https://huggingface.co/orange-sk/ViLAMP-llava-qwen'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-ViLAMP-blue'></a>
+</div>
+
+
 Official repository for paper ["Scaling Video-Language Models to 10K Frames via Hierarchical Differential Distillation"](https://arxiv.org/abs/2504.02438)
 
 ![](imgs/ViLAMP.jpg)
