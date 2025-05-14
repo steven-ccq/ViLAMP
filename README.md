@@ -56,3 +56,13 @@ We offer training scripts designed for both single-node and multi-node environme
 To streamline dataset organization, we utilize the `training_data.yaml` file to consolidate training data. Before initiating training, ensure that your dataset is registered in this file. We have included a straightforward example `example-10.json` to demonstrate the expected dataset format.
 
 Note that if your training dataset requires specific processing methods, you will need to modify line 1225 of the `llava/train/train.py` file and insert your custom video processing function prior to this line to accommodate your dataset's needs.
+
+## Citation
+```bash
+@article{cheng2025vilamp,
+  title={Scaling Video-Language Models to 10K Frames via Hierarchical Differential Distillation},
+  author={Cheng, Chuanqi and Guan, Jian and Wu, Wei and Yan, Rui},
+  journal={arXiv preprint arXiv:2504.02438},
+  year={2025}
+}
+```
