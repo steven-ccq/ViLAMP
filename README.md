@@ -1,13 +1,17 @@
-# ViLAMP: Scaling Video-Language Models to 10K Frames via Hierarchical Differential Distillation
+<h3 align="center"> <a href="https://arxiv.org/abs/2504.02438">ViLAMP: Scaling Video-Language Models to 10K Frames via Hierarchical Differential Distillation</a></h3>
+
+<h5 align="center"> If our project helps you, please give us a star ⭐ and cite our <a href="#citation">paper</a>
+<h5 align="center">
 
 <div style='display:flex; gap: 0.25rem; '>
   <a href='https://arxiv.org/abs/2504.02438'><img src='https://img.shields.io/badge/Paper-PDF-red'></a>
   <a href='https://huggingface.co/orange-sk/ViLAMP-llava-qwen'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-ViLAMP-blue'></a>
 </div>
 
+## Overview
+
 ![](imgs/ViLAMP.jpg)
 
----
 ## :gear: Setup
 ```python
 git clone https://github.com/steven-ccq/ViLAMP.git
@@ -24,7 +28,6 @@ pip install -r requirements.txt
 
 Please install 🤗[ViLAMP-llava-qwen](https://huggingface.co/orange-sk/ViLAMP-llava-qwen) and place it into `models/`
 
----
 ## :dart: Inference
 
 We provide evaluation scripts for five benchmarks: `Video-MME`, `MLVU`, `LongVideoBench`, `ActivityNetQA`, and `EgoSchema`. For more details, please refer to `scripts/eval/`.
