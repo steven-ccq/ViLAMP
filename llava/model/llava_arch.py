@@ -674,7 +674,7 @@ class LlavaLongVideoMetaForCausalLM(ABC):
                 indices = torch.linspace(0, images.shape[0]-1, max_frame_num).long()
                 hard_probs[indices] = 1
             soft_probs = nn.functional.softmax(soft_probs)
-            probs = hard_probs - soft_probs.detach() + soft_probs
+            probs = torch.ones(hard_probs.size()).to(soft_probs.device) - soft_probs.detach() + soft_probs
             probs = probs.view(-1, 1, 1, 1)
             images *= probs
         else:
