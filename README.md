@@ -26,7 +26,7 @@ pip install -r requirements.txt
 
 ### Install ViLAMP
 
-Please install 🤗[ViLAMP-llava-qwen](https://huggingface.co/orange-sk/ViLAMP-llava-qwen) and place it into `models/`
+Please install 🤗[ViLAMP-llava-qwen](https://huggingface.co/orange-sk/ViLAMP-llava-qwen_sig) and place it into `models/`
 
 ## :dart: Inference
 
