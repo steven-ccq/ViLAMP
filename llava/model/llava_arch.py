@@ -845,7 +845,7 @@ class LlavaLongVideoMetaForCausalLM(ABC):
             if key_frame_indices[0] > 0:
                 key_frame_expanded.append(img_embs[:key_frame_indices[0]])
             for idx in range(len(key_frame_indices)-1):
-                key_frame_expanded.append(img_embs[idx].unsqueeze(0).repeat(key_frame_indices[idx+1]-key_frame_indices[idx], 1, 1))
+                key_frame_expanded.append(img_embs[key_frame_indices[idx]].unsqueeze(0).repeat(key_frame_indices[idx+1]-key_frame_indices[idx], 1, 1))
             key_frame_expanded = torch.cat(key_frame_expanded)
 
             # get query mask
